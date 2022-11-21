@@ -1,0 +1,3 @@
+# lelepi
+
+Tiszta kód gyakorlat
