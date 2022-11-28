@@ -4,6 +4,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 
 public class InputPanel extends JPanel {
     JLabel label;
@@ -12,6 +13,8 @@ public class InputPanel extends JPanel {
         this.label = new JLabel("InputPanel");
         this.field = new JTextField();
         this.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
+        this.setBorder(new EmptyBorder(5, 10, 5, 10));
+        this.label.setBorder(new EmptyBorder(0, 0, 0, 10));
         this.addComponent();
     }
     public void addComponent() {
