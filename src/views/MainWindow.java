@@ -1,15 +1,16 @@
 package views;
 
 import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 public class MainWindow extends JFrame {
     TitlePanel titlePanel;
-    AedgePanel aedgePanel;
+    public AedgePanel aedgePanel;
     BedgePanel bedgePanel;
     CedgePanel cedgePanel;
-    VolumePanel volumePanel;
-    ButtonsPanel buttonsPanel;
+    public VolumePanel volumePanel;
+    public ButtonsPanel buttonsPanel;
     public MainWindow() {
         this.titlePanel = new TitlePanel();
         this.aedgePanel = new AedgePanel();
@@ -25,6 +26,8 @@ public class MainWindow extends JFrame {
 
     }
     public void initWindow() {
+        this.setIconImage(new ImageIcon("Névtelen.png").getImage());
+
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.PAGE_AXIS));
         this.addComponents();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
